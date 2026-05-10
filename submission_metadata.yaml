@@ -1,0 +1,54 @@
+# Redrob Hackathon — Submission Metadata
+# Fill TODO fields before portal upload.
+
+team_name: "TODO-team-name"
+
+primary_contact:
+  name: "TODO Full Name"
+  email: "TODO@example.com"
+  phone: "+91-TODO"
+
+team_members:
+  - name: "TODO Full Name"
+    email: "TODO@example.com"
+    role: "ML Engineer"
+
+github_repo: "TODO https://github.com/YOUR_USERNAME/YOUR_REPO"
+sandbox_link: "TODO https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+
+reproduce_command: "python3 Project/v2_rank.py --candidates India_runs_data_and_ai_challenge/candidates.jsonl --model Project/v2/model.json --out Project/v2/team_redrob_ranker_v2.csv --audit Project/v2/audit_top300_v2.csv"
+
+compute:
+  platform: "TODO local machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.x"
+  os: "TODO"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 30
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used AI assistance for architecture discussion, code generation, documentation,
+  and review. No hosted LLM/API calls are used during the ranking step.
+
+methodology_summary: |
+  V2 uses a reproducible two-stage candidate ranking system. V1 is a CPU-only
+  feature engine that scores title fit, experience band, production ML evidence,
+  search/retrieval/ranking/recommendation evidence, evaluation maturity,
+  product-company fit, Redrob availability signals, and fake-profile risk.
+  Manual labels on a curated candidate pack are then used to train a small
+  offline pairwise linear reranker optimized for candidate ordering. Final
+  output is audited for top-rank quality, honeypot risk, reasoning factuality,
+  and official CSV validity. No network, GPU, or hosted LLM is used in ranking.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

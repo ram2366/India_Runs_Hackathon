@@ -1,0 +1,88 @@
+{
+  "submission": "final submision/final/team_redrob_ranker_v2_final.csv",
+  "audit": "final submision/final/audit_top300_v2_final.csv",
+  "validator": {
+    "returncode": 0,
+    "stdout": "Submission is valid.",
+    "stderr": ""
+  },
+  "row_count": 100,
+  "audit_top100_count": 100,
+  "years": {
+    "min": 5.0,
+    "median": 6.7,
+    "max": 9.0,
+    "under_5": 0,
+    "over_10": 0
+  },
+  "fake_risk": {
+    "max": 0.08,
+    "mean": 0.0094,
+    "count_gt_0_10": 0,
+    "candidate_ids_gt_0_10": []
+  },
+  "titles": [
+    [
+      "Recommendation Systems Engineer",
+      16
+    ],
+    [
+      "Applied ML Engineer",
+      14
+    ],
+    [
+      "AI Engineer",
+      11
+    ],
+    [
+      "Machine Learning Engineer",
+      9
+    ],
+    [
+      "Senior Data Scientist",
+      9
+    ],
+    [
+      "NLP Engineer",
+      9
+    ],
+    [
+      "Senior NLP Engineer",
+      6
+    ],
+    [
+      "Search Engineer",
+      6
+    ],
+    [
+      "Staff Machine Learning Engineer",
+      5
+    ],
+    [
+      "Senior Machine Learning Engineer",
+      5
+    ],
+    [
+      "Senior AI Engineer",
+      4
+    ],
+    [
+      "Senior Applied Scientist",
+      3
+    ],
+    [
+      "Lead AI Engineer",
+      3
+    ]
+  ],
+  "non_target_titles_in_top100": [],
+  "reasoning": {
+    "unique_count": 100,
+    "short_count_lt_60_chars": 0
+  },
+  "manual_review_recommendation": [
+    "Read full profiles for ranks 1-30 before final submission.",
+    "Reject or down-adjust any candidate whose career history does not prove AI/search/ranking fit.",
+    "Check that each top-30 reasoning sentence is factual and rank-consistent."
+  ]
+}

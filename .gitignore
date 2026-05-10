@@ -1,0 +1,11 @@
+candidates.jsonl
+*.jsonl.gz
+ind-env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.log
+.slingshot
